@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<div>
+  <button type="" id="btn">点击</button>
+  <p id="test">2</p>
+</div>
+  <script src="https://cdn.bootcss.com/systemjs/0.20.19/system.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    /*SystemJS.import('./app/index.js').then(res => {
+      console.log(res.thumb)
+      $.extend({
+        thumb: res.thumb;
+      })
+      document.getElementById('btn').addEventListener('click', function() {
+        if (!$.thumb.clickTenTimes()) {
+          document.getElementById('test').innerHTML = $.thumb.clickTenTimes()
+        }
+      })
+    });*/
+  </script>
+  <script  src="app/index.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+  document.getElementById('btn').addEventListener('click', function() {
+         thumb.clickTenTimes()
+      })
+
+  </script>
+</body>
+</html>
