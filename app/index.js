@@ -1,4 +1,4 @@
-"use strict";
+
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -32,21 +32,21 @@ var Thumb = function (_PraiseButton) {
       clearTimeout(this.timeoutId);
       var self = this;
       this.timeoutId = setTimeout(function () {
-        return self.addNum();
+        self.addNum();
       }, 200);
+      return this.stop();
     }
   }, {
     key: "stop",
     value: function stop() {
       var data = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 10;
 
-      return this.num <= data;
+      return this.num < data;
     }
   }, {
     key: "addNum",
     value: function addNum() {
       this.num++;
-      console.log(this.stop());
       return this.stop();
     }
   }]);

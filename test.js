@@ -13,15 +13,15 @@ class Thumb extends PraiseButton {
     clearTimeout(this.timeoutId)
     var self = this;
     this.timeoutId = setTimeout(function(){
-        return self.addNum()
+        self.addNum()
     },200)
+    return this.stop()
   }
   stop(data = 10) {
-    return this.num <= data
+    return this.num < data
   }
   addNum () {
     this.num++
-    console.log(this.stop())
     return this.stop()
   }
 }
