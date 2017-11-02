@@ -13,7 +13,7 @@ module.exports = function(config) {
     // 要测试的文件
     // list of files / patterns to load in the browser
     files: [
-        './app/*.js'
+        './app/test/*.js'
     ],
 
     // 需要排除的文件
