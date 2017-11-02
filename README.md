@@ -4,7 +4,12 @@
  npm run babel
 
 # 单元测试
-npm run test
+
+npm install karma-cli -g
+npm install jasmine-core -g
+
+
+karma start
 
 # 火狐浏览器打开
 ./index.html
